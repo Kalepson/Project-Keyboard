@@ -1,0 +1,212 @@
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow:hidden;
+}
+.title {
+    color: mintcream;
+    text-transform: uppercase;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    font-size: 1em;
+    letter-spacing: 0.3em;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    list-style: none;
+    display: flex;
+    height: 55px;
+}
+
+li {
+    user-select: none;
+     box-shadow: 5px 3px 5px 2px rgb(85, 78, 78);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 3em;
+    width: 3em;
+    color: rgba(0,0,0,0.7);
+    border-radius: 0.3em;
+    line-height: 3em;
+    letter-spacing: 1px;
+    margin: 0.4em;
+    transition: 0.3s;
+    text-align: center;
+    font-size: 1em;
+}
+
+.Tab {
+    width: 5em;
+}
+
+.CapsLock {
+    width: 6em;
+}
+
+.ShiftLeft{
+    width: 8em;
+}
+
+.Enter {
+    width: 6em;
+}
+
+.ShiftRight {
+    width: 8em;
+}
+
+.Backspace {
+    width: 5em;
+}
+
+.first_row {
+    box-shadow: 0px 6px 0px 3px rgb(49, 49, 49);
+    background-color: crimson;
+    border: 2px solid crimson;
+}
+
+.first_row.selectat {
+    box-shadow: 0px 6px 0px 3px crimson;
+    color: crimson;
+}
+
+.secondly  {
+    box-shadow: 0px 6px 0px 3px rgb(66, 66, 66);
+    background-color: coral;
+    border: 2px solid coral;
+}
+.secondly.selectat {
+    box-shadow: 0px 6px 0px 3px coral;
+    color: coral;
+}
+
+.middle_row {
+    box-shadow: 0px 6px 0px 3px rgb(66, 66, 66);
+    background-color: darkorange;
+    border: 2px solid darkorange;
+}
+.middle_row.selectat {
+    box-shadow: 0px 6px 0px 3px darkorange;
+    color: darkorange;
+}
+
+.four_row {
+    box-shadow: 0px 6px 0px 3px rgb(66, 66, 66);
+    background-color: gold;
+    border: 2px solid gold;
+}
+.four_row.selectat {
+    box-shadow: 0px 6px 0px 3px gold;
+    color: gold;
+}
+
+.center_row {
+    box-shadow: 0px 6px 0px 3px rgb(66, 66, 66);
+    background-color: khaki;
+    border: 2px solid khaki;
+}
+.center_row.selectat {
+    box-shadow: 0px 6px 0px 3px khaki;
+    color: khaki;
+}
+
+.fill-out-key {
+    box-shadow: 0px 6px 0px 3px rgb(66, 66, 66);
+    background-color: slategrey;
+    border: 2px solid slategrey;
+}
+
+.selectat {
+    background-color: transparent;
+    -webkit-animation: vibratie 0.3s linear infinite both;
+    animation: vibratie 0.3s linear infinite both;
+}
+
+.press {
+    -webkit-animation: press  0.4s cubic-bezier(0.500, 0.580, 0.575, 1.175)both;
+    animation: press 0.4s cubic-bezier(0.500, 0.580, 0.575, 1.175)both;
+}
+
+@-webkit-keyframes press {
+    0% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes press  {
+    0% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes vibratie {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+    20% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px);
+    }
+    80% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    }
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}
+@keyframes vibratie {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+    20% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px);
+    }
+    80% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    }
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}
